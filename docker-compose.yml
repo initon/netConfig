@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  netConfig:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: netconfig-image
+    container_name: netconfig
+    environment:
+      TZ: "Europe/Moscow"
+    volumes:
+      - /opt/netconfig/app:/app
+    restart: unless-stopped
+    networks:
+      netconfig-network:
+
+networks:
+  netconfig-network:
+    external: true
+    driver: bridge

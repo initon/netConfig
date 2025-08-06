@@ -1,0 +1,22 @@
+{
+"devices":[
+   {
+      "name": "cisco 3560-19",
+      "device_type": "cisco_ios_telnet",
+      "host": "10.174.0.5",
+      "username": "user",
+      "password": "",
+      "secret": "",
+      "port": 23
+   },
+   {
+      "name": "cisco router 19",
+      "device_type": "cisco_ios",
+      "host": "10.174.0.1",
+      "username": "admin",
+      "password": "",
+      "secret": "",
+      "port": 22
+   }
+]
+}
